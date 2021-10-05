@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Document</title>
+  </head>
+  <body id=":root">
+    <header>
+      <h1 class="page-title"><big>ToDoList</big></h1>
+    </header>
+
+    <div id="body-container">
+      <!-- list container -->
+      <div id="add-to-list-Container">
+        <h2><big> Add to list</big></h2>
+        <form
+          method="POST"
+          action=""
+          class="inputform"
+          id="inputform"
+          onsubmit="return false"
+        >
+          <div id="add-task">
+            
+            <input type="text" id="task-input"  placeholder="Add task"/>
+            <br /><br />
+          </div>
+          <div id="reminder">
+            <label for="reminde"> Add reminder</label>
+            <input type="time" id="reminde" /><br /><br />
+          </div>
+          <input type="image" src="plus.svg" onclick="addtolist()" style="height: 30px; width: 30px;">
+        </form>
+      </div>
+      <!-- item container -->
+      <div id="items-Container">
+        <h2>My list</h2>
+        <form id="form" action="" onsubmit="return false">
+          <div id="tbl">
+          <table id="list-table">
+            <tr class="head ">
+              <th>Task</th>
+              <th>Reminder-time</th>
+            </tr>
+          </table>
+        </div>
+        <div id="buttons"> 
+          <input type="image" src="tick.svg" onclick="(completed())" style="height: 30px; width: 30px;">
+          <input type="image" src="icons8-effacer.svg" onclick="(deleterow())" style="height: 30px; width: 30px;">
+        </div>            
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

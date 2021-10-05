@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
+
+body {
+  background: white;
+  font-family: "Comfortaa";
+  font-size: 20px;
+}
+
+header h1 {
+  align-content: center;
+  text-align: center;
+}
+#body-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  margin-top: 70px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+#add-to-list-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #343a40;
+  padding: 40px;
+  padding-top: 0px;
+  max-height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+#items-Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 350px;
+  background-color: #343a40;
+  padding: 40px;
+  padding-top: unset;
+  border-radius: 10px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+#items-container h2 {
+  margin-block-start: unset;
+  margin-block-end: unset;
+  margin-inline-start: unset;
+  margin-inline-end: unset;
+}
+
+#form {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#list-table {
+  width: 100%;
+  display: block;
+  border-collapse: collapse;
+}
+
+#list-table td {
+  font-size: 18px;
+  font-weight: 200;
+  border: none;
+  padding: 15px 30px;
+  color: white;
+}
+
+#list-table tr {
+  background-color: #2b3035;
+  border-bottom: 3px solid #181a1d;
+}
+
+#list-table input {
+  width: 1.5em;
+  height: 1.5em;
+  margin: 15px 15px;
+  border-bottom: 3px solid #181a1d;
+  color: #363839;
+  border: 1px solid #bdc1c6;
+  border-radius: 4px;
+  appearance: none;
+  outline: 0;
+  cursor: pointer;
+  transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1);
+}
+
+#list-table input::before {
+  opacity: 1;
+}
+
+#list-table input:checked {
+  color: black;
+  border-color: white;
+  background: #06842c;
+}
+
+#list-table th {
+  background-color: #343a40;
+}
+
+#inputform {
+  text-align: center;
+  padding-top: 30px;
+}
+
+#add-item,
+#reminder {
+  margin: 10px;
+}
+
+#buttons {
+  margin-top: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+#buttons input {
+  padding: 10px;
+  background-color: #2b3035;
+  border-radius: 5px;
+}
+
+#buttons button {
+  margin: 20px;
+}
+
+#task-input {
+  flex-grow: 1;
+  color: white;
+  background-color: #2b3035;
+  font-size: 1.8rem;
+  /* line-height: 2.4rem; */
+  vertical-align: middle;
+}
